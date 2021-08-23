@@ -56,9 +56,9 @@ p, li {
 }
 
 .main-nav-item {
-    padding: 2px 4px;
+    padding: 1px 2px;
     font-family: var(--headerFont);
-    /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 / 300))); */
+    /* font-size: calc(10px + (26 - 10) * ((100vw - 300px) / (1600 / 300))); */
     background-color: var(--buttonColor);
     border-radius: 10px;
     transition: background-color 0.5s ease;
@@ -141,27 +141,27 @@ p, li {
     .footer-div {
         margin-top: 20px;
         margin-bottom: 20px;
-
+        
     }
 }
 
 .footer-div .sub-header {
+    margin-bottom: 40px;
     color: var(--bgColor);
     font-family: var(--headerFont);
     /* font-size: calc(14px + (22 - 16) * ((100vw - 300px) / (1600 / 300))); */
 }
 
-.date-div {
-    margin-right: 0;
-    width: 60px;
-    height: 60px;
-    color: var(--bgColor);
-    border-radius: 5px; 
-    /* float: left; */
+.footer-btn {
+    margin-top: 30px;
 }
 
-.list-div-text {
-    /* float: right; */
+.date-div {
+    margin-right: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px; 
+    /* float: left; */
 }
 
 .div1 {
@@ -178,22 +178,20 @@ p, li {
 
 
 .date, .month {
-    text-align: center;
+    margin: 0;
+    color: var(--bgColor);
+    font-family: var(--headerFont);
+    line-height: 1;
 }
 
 .date {
-    margin-bottom: 0;
-    padding: 5px;
-    font-size: 22px;
-    font-family: var(--headerFont);
+    font-size: calc(28px + (36 - 28) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 900;
+
 }
 
 .month {
-    margin-top: 0;
-    padding-bottom: -10px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: var(--headerFont);
+    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .service-list {
@@ -201,7 +199,49 @@ p, li {
     list-style-image: url(../media/cog.png);
 }
 
-.service-list-item {
+.service-list-item a {
     color: var(--bgColor);
 }
 
+.opportunities-list {
+    padding-left: 15px;
+    list-style-image: url(../media/chat.png);
+}
+
+.opportunities-list h3 a {
+    color: var(--bgColor);
+}
+
+.list-text {
+    color: var(--text);
+}
+
+.news-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.news-list-item {
+    margin-bottom: 30px;
+}
+
+.list-div-text h3, .list-div-text p {
+    font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.list-div-text h3 a {
+    color: var(--bgColor);
+}
+
+.colophon {
+    background-color: var(--prim);
+}
+
+.colophon-text  {
+    color: var(--text);
+}
+
+.scroll {
+    margin: 0;
+    padding: 0 0 40px 0;
+}
